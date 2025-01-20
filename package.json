@@ -1,0 +1,25 @@
+{
+  "name": "stylexswc-npm-monorepo",
+  "description": "Example npm-powered monorepo using stylexswc packages to build stylex into a nextjs app",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Matt Styles",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattstyles/stylexswc-npm-monorepo.git"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "npm@10.9.2"
+}
