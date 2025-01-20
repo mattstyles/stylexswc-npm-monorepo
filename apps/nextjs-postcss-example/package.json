@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "clean": "rimraf .next",
-    "predev": "pnpm run clean",
-    "prebuild": "pnpm run clean",
-    "prestart": "pnpm run build",
+    "predev": "npm run clean",
+    "prebuild": "npm run clean",
+    "prestart": "npm run build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -16,6 +16,7 @@
     "@stylexjs/open-props": "^0.10.1",
     "@stylexjs/stylex": "^0.10.1",
     "@stylexswc/nextjs-plugin": "0.6.2",
+    "@stylexswc/webpack-plugin": "0.6.2",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "@stylexswc/postcss-plugin": "0.6.2",
+    "@stylexswc/rs-compiler": "0.6.2",
     "@stylexjs/eslint-plugin": "^0.10.1",
     "@types/node": "^22.5.1",
     "@types/react": "^19.0.1",
