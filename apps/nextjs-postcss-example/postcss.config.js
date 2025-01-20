@@ -30,7 +30,7 @@ function getPackageIncludePaths(packageName, nodeModulePaths) {
 }
 
 const openPropsIncludePaths = getPackageIncludePaths('@stylexjs/open-props', [
-  path.join(projectRoot, 'node_modules'),
+  // path.join(projectRoot, 'node_modules'),
   path.join(monorepoRoot, 'node_modules'),
 ]);
 
