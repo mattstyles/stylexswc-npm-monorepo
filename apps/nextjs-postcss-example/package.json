@@ -19,7 +19,7 @@
     "@stylexswc/webpack-plugin": "0.6.3-rc.1",
     "@urban-ui/theme": "0.6.0-rc.4",
     "@urban-ui/text": "0.6.0-rc.4",
-    "@urban-ui/flex": "0.6.0-rc.4",
+    "@urban-ui/flex": "0.6.0-rc.5",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
