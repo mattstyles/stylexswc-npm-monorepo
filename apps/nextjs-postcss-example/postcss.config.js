@@ -34,12 +34,28 @@ const openPropsIncludePaths = getPackageIncludePaths('@stylexjs/open-props', [
   path.join(monorepoRoot, 'node_modules'),
 ]);
 
+const urbanIncludes = [
+  ...getPackageIncludePaths('@urban-ui/theme', [
+    path.join(projectRoot, 'node_modules'),
+    path.join(monorepoRoot, 'node_modules'),
+  ]),
+  ...getPackageIncludePaths('@urban-ui/flex', [
+    path.join(projectRoot, 'node_modules'),
+    path.join(monorepoRoot, 'node_modules'),
+  ]),
+  ...getPackageIncludePaths('@urban-ui/text', [
+    path.join(projectRoot, 'node_modules'),
+    path.join(monorepoRoot, 'node_modules'),
+  ]),
+]
+
 module.exports = {
   plugins: {
     '@stylexswc/postcss-plugin': {
       include: [
         'src/**/*.{js,jsx,ts,tsx}',
         ...openPropsIncludePaths,
+        ...urbanIncludes
       ],
       useCSSLayers: true,
       rsOptions: {

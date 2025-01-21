@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('node:path');
 const stylexPlugin = require('@stylexswc/nextjs-plugin');
 const rootDir = __dirname;
 
@@ -19,6 +19,6 @@ module.exports = stylexPlugin({
   },
   extractCSS: false,
 })({
-  transpilePackages: ['@stylexjs/open-props'],
+  transpilePackages: ['@stylexjs/open-props', '@urban-ui/theme', '@urban-ui/flex', '@urban-ui/text'],
   // Optionally, add any other Next.js config below
 });

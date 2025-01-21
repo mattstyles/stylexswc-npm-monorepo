@@ -15,16 +15,19 @@
   "dependencies": {
     "@stylexjs/open-props": "^0.10.1",
     "@stylexjs/stylex": "^0.10.1",
-    "@stylexswc/nextjs-plugin": "0.6.2",
-    "@stylexswc/webpack-plugin": "0.6.2",
+    "@stylexswc/nextjs-plugin": "0.6.3-rc.1",
+    "@stylexswc/webpack-plugin": "0.6.3-rc.1",
+    "@urban-ui/theme": "0.6.0-rc.3",
+    "@urban-ui/text": "0.6.0-rc.3",
+    "@urban-ui/flex": "0.6.0-rc.3",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "@stylexswc/postcss-plugin": "0.6.2",
-    "@stylexswc/rs-compiler": "0.6.2",
+    "@stylexswc/postcss-plugin": "0.6.3-rc.1",
+    "@stylexswc/rs-compiler": "0.6.3-rc.1",
     "@stylexjs/eslint-plugin": "^0.10.1",
     "@types/node": "^22.5.1",
     "@types/react": "^19.0.1",
