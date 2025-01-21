@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 const projectRoot = __dirname;
 const monorepoRoot = path.join(projectRoot, '../../');
@@ -25,7 +25,7 @@ function getPackageIncludePaths(packageName, nodeModulePaths) {
 
   return [
     path.join(packagePath, '**/*.{js,mjs}'),
-    '!' + path.join(packagePath, 'node_modules/**/*.{js,mjs}'),
+    `!${path.join(packagePath, 'node_modules/**/*.{js,mjs}')}`,
   ];
 }
 
@@ -38,8 +38,7 @@ module.exports = {
   plugins: {
     '@stylexswc/postcss-plugin': {
       include: [
-        'app/**/*.{js,jsx,ts,tsx}',
-        'components/**/*.{js,jsx,ts,tsx}',
+        'src/**/*.{js,jsx,ts,tsx}',
         ...openPropsIncludePaths,
       ],
       useCSSLayers: true,
