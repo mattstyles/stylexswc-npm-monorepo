@@ -15,6 +15,8 @@ const styles = stylex.create({
   container: {
     padding: 8,
     background: 'gainsboro',
-    color: colors.indigo7
+    color: colors.indigo7,
+    // color: 'hotpink',
+    margin: 0
   }
 })

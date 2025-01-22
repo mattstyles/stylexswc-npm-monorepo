@@ -54,8 +54,8 @@ module.exports = {
     '@stylexswc/postcss-plugin': {
       include: [
         'src/**/*.{js,jsx,ts,tsx}',
-        ...openPropsIncludePaths,
-        ...urbanIncludes
+        // ...openPropsIncludePaths,
+        // ...urbanIncludes
       ],
       useCSSLayers: true,
       rsOptions: {
