@@ -5,18 +5,15 @@
   "private": true,
   "license": "MIT",
   "author": "Matt Styles",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": ["apps/*", "packages/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mattstyles/stylexswc-npm-monorepo.git"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22",
     "typescript": "^5.7.3"
   },
   "engines": {
