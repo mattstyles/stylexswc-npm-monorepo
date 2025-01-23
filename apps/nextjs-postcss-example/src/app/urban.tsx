@@ -1,4 +1,5 @@
-import { theme } from "@urban-ui/theme/theme.stylex"
+// import { theme } from "@urban-ui/theme/dist/tokens/theme.stylex"
+import { theme } from '@urban-ui/theme/theme.stylex'
 import { Text } from "@urban-ui/text"
 import {Flex} from '@urban-ui/flex'
 import stylex from '@stylexjs/stylex'
